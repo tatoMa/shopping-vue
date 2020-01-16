@@ -1,13 +1,13 @@
 <template>
     <v-carousel
       hide-delimiters
+      cycle
+      interval=4000
     >
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
       :src="item.src"
-      reverse-transition="fade-transition"
-      transition="fade-transition"
     >
       <v-sheet
         height="100%"
@@ -20,7 +20,7 @@
         >
           <div class="text-center" style="width:70%">
             <p class="display-2">{{item.title}}</p>
-            <p class="display-1">{{item.subTitle}}</p>
+            <p class="display-2 font-weight-bold font-italic mt-8">{{item.subTitle}}</p>
             <v-btn depressed color="deep-orange" class="mt-8">Normal</v-btn>
           </div>
         </v-row>
@@ -37,22 +37,22 @@ export default Vue.extend({
     return {
       items: [
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          src: 'https://picsum.photos/500/750.webp',
           title: 'Themes',
           subTitle: 'Vuetify Material Dashboard PRO Theme'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          src: 'https://picsum.photos/500/751.webp',
           title: 'Themes2',
           subTitle: '2Vuetify Material Dashboard PRO Theme'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          src: 'https://picsum.photos/500/752.webp',
           title: 'Themes3',
           subTitle: '3Vuetify Material Dashboard PRO Theme'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          src: 'https://picsum.photos/500/753.webp',
           title: 'Themes4',
           subTitle: '4Vuetify Material Dashboard PRO Theme'
         }

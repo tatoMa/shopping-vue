@@ -1,5 +1,5 @@
 <template>
-  <div class="grey lighten-5 top-space">
+  <div>
     <v-row no-gutters>
       <v-col
         cols="12"
@@ -8,8 +8,6 @@
       >
         <v-card
           class="pa-2"
-          outlined
-          tile
         >
           <Carousels/>
         </v-card>
@@ -20,8 +18,6 @@
       >
         <v-card
           class="pa-2"
-          outlined
-          tile
         >
           <card></card>
           <card></card>
@@ -73,12 +69,5 @@ export default {
 </script>
 
 <style>
-body{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.top-space{
-  margin-top: 170px;
-}
+
 </style>

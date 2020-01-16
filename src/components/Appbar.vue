@@ -10,6 +10,7 @@
       fade-img-on-scroll
       scroll-target="#scrolling-techniques-3"
       scroll-threshold=200
+      class="z-index-top"
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -20,7 +21,7 @@
 
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Tato Stores</v-toolbar-title>
+      <v-toolbar-title class="display-1 font-weight-medium" style="padding-bottom:4px !important">Tato Stores</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -48,8 +49,8 @@
       id="scrolling-techniques-3"
       class="overflow-y-auto"
     >
-      <v-container style="height: 100vh">
-        <router-view/>
+      <v-container style="height: 100vh; max-width:100vw !important;">
+        <router-view class="top-space"/>
       </v-container>
     </v-sheet>
   </v-card>

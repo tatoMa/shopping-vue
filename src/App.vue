@@ -26,5 +26,15 @@ export default Vue.extend({
 
 </style>
 <style lang="scss">
-
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.top-space{
+  margin-top: 190px;
+}
+.z-index-top{
+  z-index: 999 !important;
+}
 </style>
